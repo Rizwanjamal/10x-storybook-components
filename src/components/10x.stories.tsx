@@ -10,7 +10,9 @@ import TopCover from './covers/TopCover'
 import MiddleCover from './covers/MiddleCover'
 import LowerMiddle from './covers/LowerMiddle'
 import GetStarted from './Buttons/GetStarted'
-// import CheckBox from './CheckBox'
+import Image from './Image'
+import CheckBox from './CheckBox'
+import Range from './Slider/Range'
 
 
 
@@ -24,7 +26,9 @@ storiesOf("10x", module)
     .add('Middle Cover',() => <MiddleCover />)
     .add('Lower Middle',() => <LowerMiddle />)
     .add('Get Started Button',() => <GetStarted />)
-    // .add('CheckBox',() => <CheckBox />)
+    .add('Image',() => <Image />)
+    .add('CheckBox',() => <CheckBox />)
+    .add('Range',() => <Range />)
    
     
     

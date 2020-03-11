@@ -4,15 +4,14 @@ import {View,StyleSheet,Image} from 'react-native'
 
 import MiddleCover from './MiddleCover'
 import LowerMiddle from './LowerMiddle'
+import ImageWithText from '../Image/index'
 
 function TopCover() {
     return (
         <View style={{position:'relative'}}>
             <View style={styles.top}>
                 
-                <View style={styles.image}>
-                    <Image source={require('../../assets/images/stars.png')}/>
-                </View>
+                {/* <ImageWithText /> */}
                 <MiddleCover />
             </View>
             <View style={styles.bottom}>

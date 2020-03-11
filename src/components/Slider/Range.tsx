@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View } from 'react-native'
+// import { View } from 'react-native'
 import {Slider} from 'react-native'
 
 class Range extends Component {

@@ -7,38 +7,69 @@ import Toggle from '../Buttons/ToggleButton'
 function MiddleCover() {
     return (
         <View style={styles.cover}>
-          
 
-            <BuisnessButton />
-            <Toggle />
-            <Text style={styles.txt}>Large Company</Text>
+            <View style={{ flexDirection: 'row', width: '100%', height: '20%', alignItems: "stretch", justifyContent: 'center' }}>
+                <View style={{ width: '40%', justifyContent: 'center' }}>
+                    <View style={{ alignSelf: 'flex-end' }}>
+
+                        <BuisnessButton />
+                    </View>
+                </View>
+                <View style={{ width: '10%', justifyContent: 'center', marginLeft: '2%', marginRight: '2%' }}>
+                    <View style={{ alignSelf: 'center' }}>
+
+                        <Toggle />
+                    </View>
+                </View>
+                <View style={{ width: '37%', justifyContent: 'center', marginRight: '5%' }}>
+                    <Text style={{ color: 'white',fontSize:'85%' }}>Large Company</Text>
+                </View>
+
+            </View>
             <View style={{
-                position: 'absolute',
-                width: '30%',
-                height: '48px',
-                left: '33%',
-                top: '25%'
+                width: '100%',
+                height: '20%',
+                alignItems: 'center',
+                justifyContent: 'center'
             }}>
-            
                 <Text style={styles.plan}> Plan Price </Text>
             </View>
             <View style={{
-                position: 'absolute',
-                width: '30%',
-                height: '48px',
-                left: '28%',
-                top: '48%'
+
+                width: '100%',
+                height: '30%',
+
+                flexDirection: 'row'
+
             }}>
-                <Text style={styles.price}> $150 </Text>
-                <Text style={styles.month}>/month</Text>
-            </View>
+               
+
+                
+                <View style={{flexDirection:'row', width: '100%', height: '100%', justifyContent: 'center' }}>
+                    <View style={{ alignItems: 'center' }}>
+
+                        <Text style={styles.price}> $150 </Text>
+                    </View>
+                        <Text style={styles.month}>/month</Text>
+
+                </View>
+                {/* <View style={{ width: '40%', height: '100%', justifyContent: 'center' }}>
+                    <View>
+                        <Text style=>/month</Text>
+                    </View>
+                </View> */}
+                </View>
+
+                {/* 
+                 */}
+           
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     cover: {
-        flexDirection: 'row',
+
         position: 'absolute',
         width: '60%',
         height: '65%',
@@ -50,9 +81,9 @@ const styles = StyleSheet.create({
         borderRadius: 15
     },
     txt: {
-        position: 'absolute',
-        left: '55%',
-        top: '6%',
+        // position: 'absolute',
+        // left: '55%',
+        // top: '6%',
         color: 'white'
     },
     plan: {
@@ -62,19 +93,19 @@ const styles = StyleSheet.create({
 
         color: '#FFFFFF'
     },
-    price:{
-        fontSize: 64,
-      fontWeight:'bold',
-        textAlign: 'center',
+    price: {
+        fontSize: '400%',
+        fontWeight: 'bold',
+
 
         color: '#FFFFFF'
     },
-    month:{
-        position:'absolute',
-        left:'85%',
-        top:'90%',
-        fontSize:20,
-        color:'white'
+    month: {
+
+        fontSize: 20,
+        color: 'white',
+        marginTop: 40,
+        marginLeft: -10
     }
 })
 

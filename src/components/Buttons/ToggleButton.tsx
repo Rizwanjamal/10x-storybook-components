@@ -18,42 +18,51 @@ export default (props:IProps) => {
     const styles = StyleSheet.create({
 
         outerView: {
-            position: "absolute",
+            // position: "absolute",
             width: "44px",
             height: "24px",
-            left: "45%",
-            top: "6%",
+            // left: "45%",
+            // top: "6%",
             backgroundColor: `${props.onStart || '#6563FF' }`,
-            borderRadius: 12
+            borderRadius: 12,
+            cursor:'pointer'
         },
         innerView: {
-            position: "absolute",
+            // position: "absolute",
+            marginTop:'5%',
+            marginLeft:'2%',
             width: "20px",
             height: "20px",
-            left: "5%",
-            top: "8%",
+            // left: "5%",
+            // top: "11%",
             backgroundColor: `${props.innerColor || 'white'}`,
-            borderRadius: 12
+            borderRadius: 12,
+            cursor:'pointer'
         },
         outerViewActive: {
-            position: "absolute",
+            // position: "absolute",
             width: "44px",
             height: "24px",
-            left: "45%",
-            top: "6%",
+            // left: "45%",
+            // top: "6%",
             backgroundColor: `${props.onToggle || 'blue'}`,
-            borderRadius: 12
+            borderRadius: 12,
+            cursor:'pointer'
     
         },
         innerViewActive: {
-            position: "absolute",
+            // position: "absolute",
+            marginTop:'5%',
+            marginLeft:'52%',
+          
             width: "20px",
             height: "20px",
-            left: "5%",
-            top: "8%",
-            marginLeft: 20,
+            // left: "5%",
+            // top: "11%",
+           
             backgroundColor: `${props.innerColor || 'white'}`,
-            borderRadius: 12
+            borderRadius: 12,
+            cursor:'pointer'
         }
     
     })

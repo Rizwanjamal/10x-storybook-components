@@ -16,15 +16,15 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: '8px 24px',
         
-        position: 'absolute',
+       
         width: '128px',
         height: '44px',
-        left: '20%',
-       bottom:'-30%',
+      
         
         backgroundColor: '#6563FF',
         border: '1px solid #6563FF',
-        borderRadius: 2
+        borderRadius: 2,
+        cursor:'pointer'
     },
     btnInner: {
         position: 'absolute',
